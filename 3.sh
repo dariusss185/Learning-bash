@@ -9,9 +9,21 @@ else
 	echo "the variable is equal to 200 "
 fi
 
-if [ -f 4.sh ]
+if [ -d hello ]
 then 
 	echo "the file exists"
 else
 	echo "the file does not exist"
 fi 
+
+command=/usr/bin/htop
+
+if [ -f $command ]
+then 
+	echo "$command is available, lets run it"
+else
+	echo "$command is not available"
+	sudo apt install -y htop
+fi 
+
+$command
