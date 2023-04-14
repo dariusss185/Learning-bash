@@ -16,9 +16,9 @@ else
 	echo "the file does not exist"
 fi 
 
-command=/usr/bin/htop
+command=htop
 
-if [ -f $command ]
+if command -v $comand 
 then 
 	echo "$command is available, lets run it"
 else
